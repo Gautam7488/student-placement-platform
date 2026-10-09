@@ -1,0 +1,12 @@
+node_modules
+.env
+.env.local
+server/.env
+client/.env
+coverage
+dist
+.vite
+.DS_Store
+npm-debug.log*
+mdbinstall.log
+*.log
