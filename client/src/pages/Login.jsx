@@ -16,7 +16,7 @@ function Login() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', form);
+      const res = await axios.post('https://student-placement-platform.onrender.com/api/auth/login', form);
 
       // Save user + token in AuthContext
       login(res.data.data.user, res.data.data.token);

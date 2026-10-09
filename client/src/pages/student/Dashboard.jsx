@@ -11,7 +11,7 @@ function StudentDashboard() {
   const [applicationsCount, setApplicationsCount] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  const API = 'http://localhost:5000/api/students';
+  const API = 'https://student-placement-platform.onrender.com/api/students';
 
   useEffect(() => {
     if (!user) {
@@ -38,7 +38,7 @@ function StudentDashboard() {
   const fetchApplications = async () => {
     try {
       const res = await axios.get(
-        'http://localhost:5000/api/applications/me',
+        'https://student-placement-platform.onrender.com/api/applications/me',
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setApplicationsCount(res.data.data.length);

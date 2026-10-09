@@ -12,7 +12,7 @@ function TestResults() {
   const [latest, setLatest] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const API = 'http://localhost:5000/api/tests';
+  const API = 'https://student-placement-platform.onrender.com/api/tests';
 
   useEffect(() => {
     fetchResults();

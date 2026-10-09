@@ -30,13 +30,13 @@ function RecruiterDashboard() {
   const fetchStats = async () => {
     try {
       const jobsRes = await axios.get(
-        'http://localhost:5000/api/jobs/my-jobs',
+        'https://student-placement-platform.onrender.com/api/jobs/my-jobs',
         { headers: { Authorization: `Bearer ${token}` } }
       );
       const jobs = jobsRes.data.data || [];
 
       const appsRes = await axios.get(
-        'http://localhost:5000/api/applications/recruiter',
+        'https://student-placement-platform.onrender.com/api/applications/recruiter',
         { headers: { Authorization: `Bearer ${token}` } }
       );
       const apps = appsRes.data.data || [];

@@ -19,7 +19,7 @@ function Profile() {
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState('');
 
-  const API = 'http://localhost:5000/api/students/profile';
+  const API = 'https://student-placement-platform.onrender.com/api/students/profile';
 
   useEffect(() => {
     fetchProfile();

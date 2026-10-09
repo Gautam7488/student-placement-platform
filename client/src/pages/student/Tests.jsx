@@ -8,7 +8,7 @@ function Tests() {
   const [tests, setTests] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const API = 'http://localhost:5000/api/tests';
+  const API = 'https://student-placement-platform.onrender.com/api/tests';
 
   useEffect(() => {
     fetchTests();

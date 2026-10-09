@@ -13,7 +13,7 @@ function Jobs() {
     skill: '',
   });
 
-  const API = 'http://localhost:5000/api/jobs';
+  const API = 'https://student-placement-platform.onrender.com/api/jobs';
 
   useEffect(() => {
     fetchJobs();

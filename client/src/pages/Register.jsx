@@ -18,7 +18,7 @@ function Register() {
     setError('');
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', form);
+      const res = await axios.post('https://student-placement-platform.onrender.com/api/auth/register', form);
       localStorage.setItem('token', res.data.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.data));
       navigate('/');

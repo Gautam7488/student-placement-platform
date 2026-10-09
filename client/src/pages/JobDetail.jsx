@@ -14,7 +14,7 @@ function JobDetail() {
   const [applying, setApplying] = useState(false);
   const [message, setMessage] = useState('');
 
-  const API = `http://localhost:5000/api/jobs/${id}`;
+  const API = `https://student-placement-platform.onrender.com/api/jobs/${id}`;
 
   useEffect(() => {
     fetchJob();
@@ -49,7 +49,7 @@ function JobDetail() {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/applications',
+        'https://student-placement-platform.onrender.com/api/applications',
         {
           jobId: job._id,
           companyId: job.companyId._id,

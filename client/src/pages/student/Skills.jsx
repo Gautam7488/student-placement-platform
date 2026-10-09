@@ -15,7 +15,7 @@ function Skills() {
     level: 'Beginner',
   });
 
-  const API = 'http://localhost:5000/api/students';
+  const API = 'https://student-placement-platform.onrender.com/api/students';
 
   const authHeader = { headers: { Authorization: `Bearer ${token}` } };
 

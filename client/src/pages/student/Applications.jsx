@@ -9,7 +9,7 @@ function Applications() {
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('All');
 
-  const API = 'http://localhost:5000/api/applications/me';
+  const API = 'https://student-placement-platform.onrender.com/api/applications/me';
 
   useEffect(() => {
     fetchApplications();

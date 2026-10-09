@@ -8,7 +8,7 @@ function ManageJobs() {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const API = 'http://localhost:5000/api/jobs';
+  const API = 'https://student-placement-platform.onrender.com/api/jobs';
 
   useEffect(() => {
     fetchJobs();

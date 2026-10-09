@@ -24,7 +24,7 @@ function ManageTests() {
     difficulty: 'Medium',
   });
 
-  const API = 'http://localhost:5000/api/admin';
+  const API = 'https://student-placement-platform.onrender.com/api/admin';
 
   useEffect(() => {
     fetchTests();
@@ -32,7 +32,7 @@ function ManageTests() {
 
   const fetchTests = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/tests');
+      const res = await axios.get('https://student-placement-platform.onrender.com/api/tests');
       setTests(res.data.data);
     } catch (err) {
       console.error(err);
